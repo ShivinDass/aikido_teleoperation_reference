@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+    <rosparam param="joy_node/dev">
+        "/dev/input/js0"
+    </rosparam>
+
+    <remap from="/joy" to="/ada/joy"/>
+
+    <node pkg="joy" type="joy_node" name="joy"/>
+
+    <arg name="use_rviz" default="true"/>
+
+    <node pkg="rviz" type="rviz" name="rviz"
+          if="$(arg use_rviz)"/>
+</launch>

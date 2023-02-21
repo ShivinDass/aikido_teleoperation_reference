@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>aikido_teleoperation</name>
+  <version>0.0.0</version>
+  <description>
+    Control of ada through a specified user input device. This package includes both our code for teleoperating ada, as well as tools useful for shared autonomy.
+  </description>
+
+  <author email="hejiazha@usc.edu">Hejia Zhang</author>
+  <maintainer email="hejiazha@usc.edu">Hejia Zhang</maintainer>
+
+
+  <license>TODO</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>rospy</depend>
+
+</package>

@@ -1,0 +1,10 @@
+<launch>
+    <include file="$(find libada)/launch/velocity.launch"/>
+    <include file="$(find video_stream_opencv)/launch/camera.launch">
+        <arg name="video_stream_provider" value="3" />
+    </include>
+    <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+        <arg name="camera" value="realsense" />
+    </include>
+    <node pkg="joy" type="joy_node" name="joy_node"/>
+</launch>
